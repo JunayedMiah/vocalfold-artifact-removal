@@ -1,0 +1,7 @@
+{
+  "a": "resunet",
+  "b": "tophat_inpaint",
+  "metric": "dice",
+  "median_diff": 0.22379482729546668,
+  "p_value": 1.7169309694739043e-16
+}
