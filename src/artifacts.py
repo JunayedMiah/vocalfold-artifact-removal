@@ -1,19 +1,5 @@
-"""Simulation of laser-sheet illumination artifacts on high-speed vocal fold frames.
+# as we don't have original data so we created some clean images with laser ray
 
-The thesis data contain a bright laser sheet (used to visualise airflow/particles
-above the glottis). Its intensity changes during the oscillation cycle as the
-glottis opens and closes, so a fixed threshold fails. We do not have such data
-yet, so we *simulate* the artifact on clean frames. This gives paired
-(artifact, clean) images for supervised training and a ground-truth mask for
-downstream evaluation.
-
-Artifact model (all parameters randomised per sequence, varied per frame):
-    1. Laser sheet: a bright, slightly tilted band with Gaussian cross-profile.
-    2. Intensity modulation: amplitude = a0 + a1 * opening(t), i.e. it follows
-       the glottal opening, as described in the thesis proposal.
-    3. Particles: small bright specks scattered along the sheet (seeding).
-    4. Glare: a soft specular blob near the sheet.
-"""
 from __future__ import annotations
 
 from dataclasses import dataclass
