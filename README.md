@@ -5,9 +5,6 @@ A small, self-contained project to prepare for the Master's thesis
 Reduction in High-Speed Vocal Fold Recordings"* (Phoniatrics & Pediatric
 Audiology, University Hospital Erlangen).
 
-The thesis data are not public yet, so this project **simulates** the problem
-and builds the full evaluation pipeline the thesis will need:
-
 ```
 clean HSV frame ──► + simulated laser sheet ──► restoration method ──► threshold segmentation ──► GAW
    (+ glottis mask)     (intensity follows the     (3 classical +         (Otsu, darkest region)     (area per frame)
